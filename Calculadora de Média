@@ -1,0 +1,31 @@
+//head
+import java.util.Scanner;
+ public class Main {
+    public static void main(String[] args) {
+      Scanner entrada = new Scanner(System.in);
+//head
+    
+    //variaveis
+    int soma = 0;
+    int contador =1;
+    double media;
+    int numero = 0;
+    int total = 0;
+    //variaveis
+   
+   
+   //body
+   while (contador <=5 ) {
+   System.out.println("Digite um numero");    
+   numero = entrada.nextInt(); 
+   soma = soma + numero;
+   contador++;
+   }
+   
+   
+   media = (double) soma / 5 ;
+   System.out.println("O resultado da media é: " + media );  
+   }
+    }
+ 
+ //body
