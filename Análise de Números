@@ -1,0 +1,34 @@
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner entrada = new Scanner(System.in);
+
+        int[] numeros = new int[5];
+        int soma = 0;
+        double media;
+        int contadoracima = 0;
+
+        for (int i = 0; i < 5; i++) {
+            System.out.println("Digite um numero:");
+            numeros[i] = entrada.nextInt();
+            soma = soma + numeros[i];
+        }
+
+        media = (double) soma / 5;
+
+        for (int i = 0; i < 5; i++) {
+            if (numeros[i] > media) {
+                contadoracima++;
+            }
+        }
+
+        System.out.println("Soma: " + soma);
+        System.out.println("Media: " + media);
+        System.out.println("Numeros acima da media: " + contadoracima);
+
+        entrada.close();
+    }
+}
